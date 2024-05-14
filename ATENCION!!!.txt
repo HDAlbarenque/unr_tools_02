@@ -1,0 +1,13 @@
+Si de mega.py, se utiliza 'download', arroja el error:
+    PermissionError: [WinError 32] The process cannot access the file because it is being used by another process:
+o
+    PermissionError: [WinError 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso:
+
+Hay que modificar mega.py, de la siguiente manera:
+ir a la línea 745, donde dice:
+    shutil.move(temp_output_file.name, output_path)
+antes de esa, insertar:
+    temp_output_file.close()
+
+Referencia:
+https://stackoverflow.com/questions/67215887/permission-error-while-downloading-from-mega-py

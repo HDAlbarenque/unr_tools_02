@@ -1,0 +1,7 @@
+__pycache__/
+DB/Firebase/__pycache__/
+.vscode/
+scratch/
+*.json
+*.bak_*
+unire.sqlite
