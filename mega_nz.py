@@ -70,6 +70,7 @@ class Mega_nz:
         Returns:
             str: The URL link for the given file data.
         """
+        # Error del 18/05/2024
         return self.mega_cnx.get_link(data4url)
 
     def download_filename(self, file_name, dest_path):

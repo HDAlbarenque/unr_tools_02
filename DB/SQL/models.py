@@ -1,4 +1,4 @@
-from db import Base
+from .db import Base
 
 from sqlalchemy import Column, Integer, String, Float
 
@@ -25,9 +25,9 @@ class Log_descargas(Base):
     id = Column(Integer, primary_key=True)
     id_tipo = Column(Integer, nullable=False)
     id_muni = Column(Integer, nullable=False)
+    descripcion = Column(Integer, nullable=False)
     inicio = Column(String, nullable=False)
     fin = Column(String, nullable=False)
-    descripcion = Column(Integer, nullable=False)
 
     def __init__(self, id_muni, id_tipo, inicio, fin, descripcion):
         self.id_muni = id_muni

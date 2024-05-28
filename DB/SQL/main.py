@@ -1,5 +1,7 @@
-from db import *
-from models import Log_descargas, Log_tipos
+# from db import *
+# from models import Log_descargas, Log_tipos
+from DB.SQL.db import *
+from DB.SQL.models import Log_descargas, Log_tipos
 
 
 # Función que, si la tabla 'log_tipos' está vacía, le inserta tres registros de diferentes estados
